@@ -23,7 +23,7 @@ This stack is meant to be deployed behind an automated NGINX based HTTPS proxy. 
 
 **Configuration**
 * **Rename `.env-changeme` file into `.env`** to ensure `docker-compose` gets its environement correctly.
-* Modify the following variables in `.env-changeme` file :
+* Modify the following variables in `.env` file :
   * `VIRTUAL_HOST=` : replace `bubble.your-domain.ltd` with your choosen subdomain for teamengine.
   * `LETSENCRYPT_EMAIL=` : replace `email@mail-provider.ltd` with the email address to get notifications on Certificates issues for your domain.
 * Modify the `proxy/bubble-stack.conf` file to fit your proxy needs. Example configuration givne for cockpit admin web GUI.
