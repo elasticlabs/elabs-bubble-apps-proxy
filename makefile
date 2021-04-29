@@ -28,7 +28,7 @@ help:
 up:
 	@bash ./.utils/message.sh info "[INFO] Building the Bubble apps proxy stack"
 	# Set server_name in reverse proxy
-	sed -i "s/changeme/$(BUBBLE_URL)/" .proxy/bubble-stack.conf
+	sed -i "s/changeme/$(BUBBLE_URL)/" ./proxy/bubble-stack.conf
 	# Build the stack
 	docker-compose -f docker-compose.yml build
 	# Run the stack
